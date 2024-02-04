@@ -1,0 +1,87 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  padding: 0;
+  border: inherit;
+}
+
+body {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  max-width: 450px;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0 auto;
+  font-weight: 200;
+  text-align: center;
+  background-color: rgb(14, 1, 33);
+  color: white;
+}
+
+h1 {
+  font-size: 44px;
+  margin-top: 30px;
+}
+
+.form {
+  padding: 20px;
+  margin-top: 40px;
+  color: #000000;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.label {
+  font-size: 18px;
+  font-weight: 100;
+
+}
+
+.input {
+  width: 240px;
+  border: none;
+  border-bottom: 2px solid #661aa1;
+  margin-top: 30px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.button {
+  min-width: 80px;
+  border-radius: 16px;
+  padding: 8px 16px;
+  background-color: #661aa1;
+  color: #ffffff;
+  border: transparent;
+}
+
+.text {
+  margin-top: 30px;
+  font-size: 22px;
+  padding: 16px;
+  background-color: #00471b;
+  color: white;
+  border-radius: 20px;
+}
+
+.word {
+  font-style: italic;
+}
