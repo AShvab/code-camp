@@ -18,14 +18,36 @@ const romanNumerals = [
   { value: 1, numeral: "I" },
 ];
 
+// function convertToRoman(num) {
+//   let result = "";
+//   for (let i = 0; i < romanNumerals.length; i++) {
+//     while (num >= romanNumerals[i].value) {
+//       result += romanNumerals[i].numeral;
+//       num -= romanNumerals[i].value;
+//     }
+//   }
+//   return result;
+// }
+
+// function convertToRoman(num) {
+//   let result = "";
+//   romanNumerals.forEach(function(item) {
+//   while (num >= item.value) {
+//   result += item.numeral;
+//   num -= item.value;
+//   }
+//   });
+//   return result;
+//   }
+
 function convertToRoman(num) {
   let result = "";
-  for (let i = 0; i < romanNumerals.length; i++) {
-    while (num >= romanNumerals[i].value) {
-      result += romanNumerals[i].numeral;
-      num -= romanNumerals[i].value;
+  romanNumerals.forEach(({ value, numeral }) => {
+    while (num >= value) {
+      result += numeral;
+      num -= value;
     }
-  }
+  });
   return result;
 }
 
@@ -49,3 +71,8 @@ function convert() {
 
 document.body.appendChild(output);
 convertBtn.addEventListener("click", convert);
+
+
+
+
+
