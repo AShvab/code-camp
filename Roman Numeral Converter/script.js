@@ -31,7 +31,7 @@ const romanNumerals = [
 
 // function convertToRoman(num) {
 //   let result = "";
-//   romanNumerals.forEach(function(item) {
+//   romanNumerals.forEach((item)=> {
 //   while (num >= item.value) {
 //   result += item.numeral;
 //   num -= item.value;
@@ -53,6 +53,7 @@ function convertToRoman(num) {
 
 function convert() {
   const inputValue = parseInt(inputNumber.value);
+  // console.log(typeof inputNumber.value)
   if (isNaN(inputValue) || inputValue < 1 || inputValue > 3999) {
     output.classList.add("alert", "output");
     if (isNaN(inputValue)) {
@@ -63,16 +64,13 @@ function convert() {
       output.innerText = "Please enter a number less than or equal to 3999";
     }
   } else {
-    output.classList.remove("alert");
+    output.classList.remove("alert");  
     output.classList.add("output");
     output.innerText = convertToRoman(inputValue);
   }
 }
 
-document.body.appendChild(output);
+// document.body.appendChild(output);
 convertBtn.addEventListener("click", convert);
-
-
-
 
 
