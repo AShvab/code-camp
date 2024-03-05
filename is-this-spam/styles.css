@@ -55,6 +55,7 @@ textarea {
   font-size: 1.1rem;
   padding: 20px 30px;
   border-radius: 4px;
+  background-color: rgb(183, 204, 197);
 }
 
 .btn {
@@ -67,8 +68,8 @@ textarea {
   background-image: linear-gradient(var(--golden-yellow), var(--orange));
   border-color: var(--gold);
   border-width: 3px;
- padding: 10px 5px;
- border-radius: 4px;
+  padding: 10px 5px;
+  border-radius: 4px;
 }
 
 .btn:hover {
@@ -84,6 +85,6 @@ textarea {
   margin-top: 10px;
 }
 
-.text{
+.text {
   margin-bottom: 20px;
 }
