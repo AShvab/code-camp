@@ -9,18 +9,21 @@
   <body>
     <header>
       <p>freeCodeCamp</p>
-      <h1>Telephone Number Validator</h1>
+      <h1 class="title">Telephone Number Validator</h1>
     </header>
 
     <main>
         <section class="check">
             <form class="form">
                 <label>Enter a Phone Number: </label>
-                <input type="text" id="user-input"/>
-                <button class="btn" type="button" id="check-btn">Check</button>
-                <button class="btn" type="button" id="clear-btn">Clear</button>               
+                <input class="input" type="text" id="user-input"/>
+                <div class="buttons">
+                  <button class="btn" type="button" id="check-btn">Check</button>
+                  <button class="btn" type="button" id="clear-btn">Clear</button> 
+                </div>
+                <div id="results-div"></div>
             </form>
-            <div id="results-div"></div>
+      
         </section>              
     </main>
     <script src="./script.js"></script>
