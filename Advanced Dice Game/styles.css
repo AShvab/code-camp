@@ -33,6 +33,16 @@ h1 {
   margin: 25px 0;
 }
 
+/* .goBack{  
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  color:#ffffff;
+  background-color: rgb(173, 164, 164);
+  padding: 15px 30px;
+  border: 1px solid #e6e6ed;
+} */
+
 .rules-container {
   display: none;
   background-color: var(--light-grey);
